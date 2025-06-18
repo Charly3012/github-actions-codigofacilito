@@ -1,0 +1,16 @@
+name: "First Deploy"
+
+on: 
+  push: 
+    branches: ["main"]
+
+jobs: 
+  first-deploy: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Do pull to code"
+      - run: echo "Run migrations"
+      - run: echo "Generate binary code"
+      - run: echo "Publish version"
+
