@@ -7,7 +7,6 @@ on:
 jobs: 
   #First job
   first_job:
-    if: false
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +15,7 @@ jobs:
         run: echo "Hola mundo"
 
   second_job:
-
+    if: false
     needs:
       - first_job #Depens on first job, wait to first jobs ends success
 
