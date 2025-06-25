@@ -15,7 +15,7 @@ jobs:
         run: echo "Hola mundo"
 
   second_job:
-    if: ${{ github.ref == 'refs/head/M2C1-YAMLyWorkflows'}}
+    if: ${{ github.ref == 'refs/heads/M2C1-YAMLyWorkflows'}}
     needs:
       - first_job #Depens on first job, wait to first jobs ends success
 
